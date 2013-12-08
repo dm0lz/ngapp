@@ -1,10 +1,14 @@
 Ngapp::Application.routes.draw do
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   get "home/index"
   root 'home#index'
+
+  devise_for :users
 
   get 'articles', to: 'articles#index', as: :articles
   get 'articles/new', to: 'articles#new', as: :new_article

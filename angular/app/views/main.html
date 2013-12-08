@@ -46,3 +46,40 @@
 <div class="footer">
   <p>♥ from the Yeoman team</p>
 </div>
+
+
+<button ng-click="on=!on">Toggle show/Hide</button>
+
+<section ng-if="!on">
+
+  <div ng-repeat="article in articles.data">
+
+    <h1>{{article.name}}</h1>
+
+  </div>
+
+</section>
+
+<button ng-click="showArticles()">Button show Articles</button>
+
+<h1 class="articles">end of file</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
